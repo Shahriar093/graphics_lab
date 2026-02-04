@@ -1,5 +1,9 @@
 import React from "react";
-
+import underwaterVideo from "../assets/Underwater_Video.mp4";
+import calmnature from "../assets/CalmNature.jpg";
+import boxbreathingImg from "../assets/BoxBreathing.png";
+import deepseadriftImg from "../assets/DeepSeaDrift.webp";
+import stresspopImg from "../assets/StressPop.png";
 const Home = () => {
   return (
     // Background uses a soft, airy blue gradient mimicking the sky or clear water
@@ -19,9 +23,23 @@ const Home = () => {
         <div className="mb-16 relative aspect-video bg-white/40 backdrop-blur-sm rounded-[3rem] border border-blue-100 flex items-center justify-center shadow-2xl shadow-blue-200/50 overflow-hidden group">
           <div className="text-center p-8">
             <div className="w-20 h-20 border-4 border-blue-300 border-t-transparent rounded-full animate-spin mx-auto mb-4 opacity-20"></div>
-            <p className="text-blue-800 font-light">
-              [ Primary Soothing Video / Interactive Breathing Circle ]
-            </p>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src={underwaterVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {/* Optional Overlay Text */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/10 group-hover:bg-transparent transition-all">
+              <p className="text-white/80 text-xs italic">
+                Focus your eyes here to begin relaxation
+              </p>
+            </div>
             <p className="text-xs text-blue-400 mt-2 italic">
               Focus your eyes here to begin relaxation
             </p>
@@ -43,7 +61,11 @@ const Home = () => {
               </p>
             </div>
             <div className="h-64 bg-blue-100/50 rounded-3xl flex items-center justify-center border-2 border-dashed border-blue-200 text-blue-400">
-              [ Nature/Underwater Illustration ]
+              <img
+                src={calmnature}
+                alt="Calm Nature"
+                className="w-full h-full object-cover rounded-3xl"
+              />
             </div>
           </section>
 
@@ -77,13 +99,25 @@ const Home = () => {
             </h2>
             <div className="columns-1 md:columns-2 gap-6 space-y-6">
               <div className="h-40 bg-blue-200/30 rounded-3xl border border-blue-100 flex items-center justify-center text-blue-400 italic">
-                [ Calm Ocean Image ]
+                <img
+                  src={boxbreathingImg}
+                  alt="Box Breathing"
+                  className="w-full h-full object-cover rounded-3xl"
+                />
               </div>
               <div className="h-80 bg-blue-200/30 rounded-3xl border border-blue-100 flex items-center justify-center text-blue-400 italic">
-                [ Deep Sea Fish Species Video ]
+                <img
+                  src={deepseadriftImg}
+                  alt="Deep Sea Drift"
+                  className="w-full h-full object-cover rounded-3xl"
+                />
               </div>
               <div className="h-60 bg-blue-200/30 rounded-3xl border border-blue-100 flex items-center justify-center text-blue-400 italic">
-                [ Abstract Light Patterns ]
+                <img
+                  src={stresspopImg}
+                  alt="Stress Pop"
+                  className="w-full h-full object-cover rounded-3xl"
+                />
               </div>
             </div>
           </section>
