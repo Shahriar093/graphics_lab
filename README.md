@@ -2,11 +2,11 @@
 # 1. Environment Variables
 
 After cloning the project, create a .env file at the root directory and copy the following content into it:
-#MongoDB Connection String
+# MongoDB Connection String
 MONGODB_URI=mongodb+srv://shahriar:graphicsLab@cluster0.5gtc8kl.mongodb.net/?appName=Cluster0
 JWT_SECRET=hellohello
 
-#Firebase Configuration
+# Firebase Configuration
 REACT_APP_FIREBASE_API_KEY=AIzaSyD6AFfmwFxh89FX89XV0riPU23PkAVvOnw
 REACT_APP_FIREBASE_AUTH_DOMAIN=graphics-ef8ad.firebaseapp.com
 REACT_APP_FIREBASE_PROJECT_ID=graphics-ef8ad
