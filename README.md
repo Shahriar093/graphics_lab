@@ -1,5 +1,5 @@
-# After Cloning the project, Create .env at the root directory. Stuffs to be copied and pasted in .env are follows:
-# ---------------- .env --------------------------------
+#After Cloning the project, Create .env at the root directory. Stuffs to be copied and pasted in .env are follows:
+#---------------- .env --------------------------------
 
 #MongoDB Connection String
 MONGODB_URI=mongodb+srv://shahriar:graphicsLab@cluster0.5gtc8kl.mongodb.net/?appName=Cluster0
