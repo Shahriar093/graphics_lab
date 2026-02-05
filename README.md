@@ -1,6 +1,7 @@
-#After Cloning the project, Create .env at the root directory. Stuffs to be copied and pasted in .env are follows:
-#---------------- .env --------------------------------
+# Setup Instructions
+# 1. Environment Variables
 
+After cloning the project, create a .env file at the root directory and copy the following content into it:
 #MongoDB Connection String
 MONGODB_URI=mongodb+srv://shahriar:graphicsLab@cluster0.5gtc8kl.mongodb.net/?appName=Cluster0
 JWT_SECRET=hellohello
@@ -13,19 +14,11 @@ REACT_APP_FIREBASE_STORAGE_BUCKET=graphics-ef8ad.appspot.com
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=738690325735
 REACT_APP_FIREBASE_APP_ID=1:738690325735:web:91ef60d2dff6614ede5642
 
-#----------------------------------------------------------------
+# 2. Backend Setup
+npm install
+npm start
+# 3. Frontend Setup
+cd client
+npm install
+npm run dev
 
-#For Backend:
-#---------- Backend ----------
-1. npm install
-2. npm start
-#-----------------------------
-
-#For Frontend:
-#---------- Frontend ----------
-1.cd client
-2.npm install
-3.npm run dev
-#-----------------------------
-
-   
