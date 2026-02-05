@@ -21,10 +21,15 @@ REACT_APP_FIREBASE_MESSAGING_SENDER_ID=738690325735
 REACT_APP_FIREBASE_APP_ID=1:738690325735:web:91ef60d2dff6614ede5642
 
 # 2. Backend Setup
-npm install
-npm start
+1.npm install
+
+2. npm start
 # 3. Frontend Setup
-cd client
-npm install
-npm run dev
+1. cd client
+
+2. npm install
+   
+3. npm run dev
+
+
 
